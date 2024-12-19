@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-NG">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="successCSS.css" rel="stylesheet">
+
+        <title>Success!</title>
+    </head>
+    
+    <body>
+        <div>
+            <main>
+                <img alt="tick" src="../assets/images/icon-list.svg">
+                <h1>Thanks for subscribing!</h1>
+
+                <p class="span1">A confirmation email has been sent to 
+                    <span id="email"></span> 
+                Please open it and click the button inside to confirm your subscription.
+                </p>
+                <br>
+
+                <a href="https://www.google.com"><button id="button2">Dismiss message</button></a>
+            </main>
+
+        </div>
+        
+        <footer>
+            <script>
+                const name2 = sessionStorage.getItem('names');
+                const info = document.querySelector('span');
+                info.style.fontWeight = 'bolder';
+                info.textContent = name2;
+                
+            </script>
+        </footer>
+    </body>
+
+</html> 

@@ -1,0 +1,81 @@
+html{
+    width:1300px;
+    min-height: 100vh;
+    place-self: center;
+    background-color: hsl(235, 18%, 26%);
+}
+
+body{
+    width:90%;
+    place-self: center;
+    /*border:1px solid red;*/
+    padding:5%;
+    
+}
+
+div{
+    display:flex;
+    flex-direction: row;
+    /*border:1px solid blue;*/
+    width:22%;
+    place-self: center;
+    background-color: white;
+    padding:4%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-family: roboto;
+    color:hsl(234, 29%, 20%);
+    
+}
+
+img{
+    height:2.5em;
+
+}
+.span1{
+    font-size: 0.7em;
+    
+}
+
+button{
+    width:100%;
+    height:3em;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border:0px;
+    background-color: hsl(234, 29%, 20%);
+    color:white;
+    
+}
+
+button:hover{
+    cursor:pointer;
+    background-color: hsl(4, 100%, 67%);
+}
+
+@media only screen and (max-width:500px){
+    html{
+        width:345px;
+        background-color: white;
+    }
+    body{
+        width:90%;
+    }
+
+    div{
+        width:90%;
+        padding-top:40%;
+        border-radius: 0;
+    }
+
+    .span1{
+        margin-bottom: 55%;
+        font-size:0.8em;
+    }
+
+    
+}

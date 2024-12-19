@@ -1,0 +1,141 @@
+html{
+    width:1300px;
+    min-height: 100vh;
+    place-self: center;
+    background-color: hsl(235, 18%, 26%);
+}
+
+body{
+    width:90%;
+    place-self: center;
+    /*border:1px solid red;*/
+    padding:5%;
+    
+}
+
+main{
+    display: grid;
+    font-family:georgia;
+    width:57%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    align-self: center;
+    justify-self: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position:relative;
+    background-color: white;
+    color: hsl(234, 29%, 20%);
+}
+
+.div1{
+    padding:10%;
+    padding-right: 5%;
+}
+
+.divFont{
+    font-size: 0.8em;
+    position:relative;
+    top:-2%;
+}
+.div2{
+    padding:5%;
+    
+}
+.tick{
+    height:1.1em;
+    margin-right: 5pt;
+}
+
+input{
+    border:1px solid  hsl(234, 29%, 20%);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    margin-bottom:4%;
+    width:92%;
+    height:2.5em;
+    
+}
+
+.button{
+    border:0px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    margin-bottom:8%;
+    width:94%;
+    height:2.6em;
+    background-color:  hsl(234, 29%, 20%);
+    color:white;
+}
+
+.button:hover{
+    background-color:  hsl(4, 100%, 67%);
+    cursor:pointer;
+    box-shadow:4px 4px 7px rgba(0,0,0, 20%);
+}
+
+.img1{
+    width: 87%;
+    position:relative;
+    left:11%;
+}
+
+.error{
+    font-size:0.6em;
+    position:relative;
+    left:40%;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+    
+.attribution a { 
+        color: hsl(228, 45%, 44%); 
+   
+}
+
+@media only screen and (max-width:500px){
+    html{
+        width:345px;
+        background-color: white;
+    }
+    body{
+        width:90%;
+    }
+
+    main{
+        grid-template-areas: "bottom"
+                             "top";
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+        width:90%;
+    }
+
+    .div1{
+        grid-area:top;
+
+    }
+
+    .div2{
+        grid-area: bottom;
+        padding:0;
+    }
+
+    .img1{
+        width:100%;
+        left:0%;
+    }
+
+    .error{
+        left:30%;
+    }
+
+
+}
